@@ -1,0 +1,23 @@
+{
+  "name": "tinkeringTouches",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianfonolla/tinkeringTouches.git"
+  },
+  "keywords": [],
+  "author": "Cristian <cristian.fonolla@gmail.com> (https://github.com/cristianfonolla)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristianfonolla/tinkeringTouches/issues"
+  },
+  "homepage": "https://github.com/cristianfonolla/tinkeringTouches#readme",
+  "dependencies": {
+    "hammerjs": "^2.0.8"
+  }
+}
