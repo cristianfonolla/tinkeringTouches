@@ -9,6 +9,9 @@
 </head>
 <body>
 
+
+    <output id="output"></output>
+
     <canvas id="canvas" width="800" height="800"></canvas>
 
 
@@ -21,19 +24,29 @@
 
 <script>
 
+
+    function report() {
+
+        var output = document.getElementById('output');
+
+        output.innerHTML += newContent;
+
+
+    }
+
     function start() {
 
-        console.log("START");
+        report("START");
 
 
     }
 
     function end() {
-        console.log("END");
+        report("END");
     }
 
-    function mode() {
-        console.log("MODE");
+    function move() {
+        report("MOVE");
     }
 
 
