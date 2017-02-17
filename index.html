@@ -9,86 +9,33 @@
 </head>
 <body>
 
+<h1>OUTPUT:</h1>
+<output id="output"></output>
 
-    <output id="output"></output>
-
-    <canvas id="canvas" width="800" height="800"></canvas>
-
-
-
-
-
-
-
-
-
-<script>
-
-
-    function report(newContent) {
-
-        var output = document.getElementById('output');
-
-        output.innerHTML += newContent;
-
-
-
-    }
-
-    function start() {
-
-        report("START<br>");
-
-
-
-    }
-
-    function end() {
-        report("END<br>");
-
-    }
-
-    function move() {
-        report("MOVE<br> ");
-    }
-
-
-
-    function init() {
-
-        var canvas = document.getElementById('canvas');
-
-
-        canvas.addEventListener('touchstart',start(),false);
-        canvas.addEventListener('touchend',end(),false);
-        canvas.addEventListener('touchmode',move(),false);
-
-    }
-
-
-
-
-    init();
-
-
-
-
-
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h1>Canvas:</h1>
+<canvas id="canvas" width="800" height="800"></canvas>
 
 </body>
+<script>
+    function report(newContent) {
+        var output = document.getElementById('output');
+        output.innerHTML += newContent;
+    }
+    function start() {
+        report('start<br>');
+    }
+    function end() {
+        report('end<br>');
+    }
+    function move() {
+        report('move<br>');
+    }
+    function init() {
+        var canvas = document.getElementById('canvas');
+        canvas.addEventListener('touchstart', start(), false);
+        canvas.addEventListener('touchend', end(), false);
+        canvas.addEventListener('touchmove', move(), false);
+    }
+    init();
+</script>
 </html>
