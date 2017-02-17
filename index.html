@@ -8,8 +8,51 @@
     <title>Document</title>
 </head>
 <body>
+
+    <canvas id="canvas" width="800" height="800"></canvas>
+
+
+
+
+
+
+
+
+
 <script>
 
+    function start() {
+
+        console.log("START");
+
+
+    }
+
+    function end() {
+        console.log("END");
+    }
+
+    function mode() {
+        console.log("MODE");
+    }
+
+
+
+    function init() {
+
+        var canvas = this.getElementById('canvas');
+
+
+        canvas.addEventListener('touchstart',start(),false);
+        canvas.addEventListener('touchend',end(),false);
+        canvas.addEventListener('touchmode',mode(),false);
+
+    }
+
+
+
+
+    init();
 
 
 
@@ -18,7 +61,7 @@
 </script>
 
 
-pipo
+
 
 
 
