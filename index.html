@@ -27,16 +27,15 @@
     }
     function end() {
         report('end<br>');
-        console.log("hola  vbb");
     }
     function move() {
         report('move<br>');
     }
     function init() {
         var canvas = document.getElementById('canvas');
-        canvas.addEventListener('touchstart', start(), false);
-        canvas.addEventListener('touchend', end(), false);
-        canvas.addEventListener('touchmove', move(), false);
+        canvas.addEventListener('touchstart', start, false);
+        canvas.addEventListener('touchend', end, false);
+        canvas.addEventListener('touchmove', move, false);
     }
     init();
 </script>
@@ -47,16 +46,7 @@
 
         border: 1px solid black;
 
-
     }
-
-
-
-
-
-
-
-
 
 
 </style>
